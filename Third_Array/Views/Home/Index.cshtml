@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Game "Array"</h1>
+
+    <div class="mb-3">
+        <label class="form-label">Введите число от большего к меньшему, через пробел</label>
+        <input id="1" class="array-input form-control">
+        <label style="visibility:hidden" class="wrong text-danger ">Неккоректный ввод! Введите число от большего к меньшему!</label>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Введите число от большего к меньшему, через пробел</label>
+        <input id="2" class="array-input form-control">
+        <label style="visibility:hidden" class="wrong text-danger">Неккоректный ввод! Введите число от большего к меньшему!</label>
+    </div>
+
+    <button type="submit" class="data-open-modal btn btn-primary ">Собрать массив</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ваш массив</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+

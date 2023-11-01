@@ -1,0 +1,10 @@
+﻿@model ArrayNumbers
+
+<div class="row text-center">
+    <h3>
+        @foreach (var item in @Model.Numbers)
+        {
+            @item @:&nbsp;
+        }
+    </h3>
+</div>
